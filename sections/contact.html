@@ -1,0 +1,76 @@
+<section id="contact" class="section cta-section" role="region" aria-label="Contacto">
+  <div class="cta-bg" aria-hidden="true"></div>
+  <div class="container">
+    <div class="cta-grid">
+      <div class="cta-info">
+        <h2 data-i18n="contact.title">¿Listo para explorar Perú con estilo?</h2>
+        <p data-i18n="contact.lead">Reserva tu vehículo ahora y disfruta de una experiencia de alquiler sin complicaciones con Rent2Go.</p>
+        <div class="contact-info">
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h3 data-i18n="contact.location.title">Ubicación</h3>
+              <p data-i18n="contact.location.value">Av. La Marina 3245, San Miguel — Lima, Perú</p>
+            </div>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+            <div>
+              <h3 data-i18n="contact.contact.title">Contáctanos</h3>
+              <p data-i18n="contact.contact.value">+51 1 234 5678<br/>info@rent2go.pe</p>
+            </div>
+          </div>
+          <div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <h3 data-i18n="contact.hours.title">Horario</h3>
+              <p data-i18n="contact.hours.value">Lun-Vie 8:00-20:00<br/>Sáb-Dom 9:00-18:00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3 data-i18n="contact.form.title">Reserva tu vehículo</h3>
+        <div id="form-success" class="form-success" style="display:none" role="status" aria-live="polite">¡Solicitud enviada con éxito!</div>
+        <form id="contact-form">
+          <div class="form-group">
+            <label data-i18n="contact.form.fullname">Nombre completo</label>
+            <input type="text" name="name" placeholder="John Doe" required aria-label="Nombre completo" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact.form.email">Correo electrónico</label>
+            <input type="email" name="email" placeholder="john@example.com" required aria-label="Correo electrónico" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact.form.phone">Teléfono</label>
+            <input type="tel" name="phone" placeholder="+51 1 234 5678" required aria-label="Teléfono" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact.form.select">Tipo de vehículo</label>
+            <select name="carType" required aria-label="Tipo de vehículo">
+              <option value="">Selecciona un vehículo</option>
+              <option value="economic">Económico</option>
+              <option value="suv">SUV</option>
+              <option value="luxury">Lujo</option>
+              <option value="van">Van</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact.form.startdate">Fecha de recogida</label>
+            <input type="date" name="pickupDate" required aria-label="Fecha de recogida" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact.form.enddate">Fecha de devolución</label>
+            <input type="date" name="returnDate" required aria-label="Fecha de devolución" />
+          </div>
+          <div class="form-group">
+            <label data-i18n="contact.form.message">Mensaje (opcional)</label>
+            <textarea name="message" placeholder="Cuéntanos más..." aria-label="Mensaje"></textarea>
+          </div>
+          <button type="submit" class="btn-primary" data-i18n="contact.form.submit">Solicitar reserva</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

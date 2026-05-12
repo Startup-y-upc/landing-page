@@ -1,0 +1,140 @@
+{
+  "brand":"Rent2Go",
+  "language":"Español",
+  "nav":{
+    "home":"Inicio",
+    "fleet":"Vehículos",
+    "how":"¿Cómo funciona?",
+    "requirements":"Requisitos",
+    "faq":"Preguntas",
+    "contact":"Contacto"
+  },
+  "auth":{
+    "login":"Iniciar sesión"
+  },
+  "cta":{
+    "reserve":"Reservar ahora"
+  },
+  "hero":{
+    "title":"Explora Perú con libertad y estilo",
+    "subtitle":"Rent2Go te ofrece la mejor flota de vehículos en Perú. Vehículos modernos, limpios y seguros para tu viaje.",
+    "cta1":"Explorar vehículos",
+    "cta2":"¿Cómo funciona?",
+    "stat1":"Vehículos",
+    "stat2":"Clientes satisfechos",
+    "stat3":"Ciudades",
+    "stat4":"Soporte"
+  },
+  "features":{
+    "title":"¿Por qué elegir Rent2Go?",
+    "lead":"Brindamos experiencias de alquiler de alta calidad con atención personalizada.",
+    "items":{
+      "0":{"title":"Flota Premium","desc":"Vehículos modernos y bien mantenidos para garantizar tu seguridad y confort."},
+      "1":{"title":"Reservas Flexibles","desc":"Modifica o cancela tu reserva sin complicaciones hasta 48 horas antes."},
+      "2":{"title":"Proceso Sencillo","desc":"Reserva en línea o por teléfono y recoge tu vehículo en minutos."},
+      "3":{"title":"Servicio 24/7","desc":"Asistencia en carretera y soporte al cliente disponible las 24 horas."},
+      "4":{"title":"Tarifas Transparentes","desc":"Sin cargos ocultos. Nuestros precios incluyen seguro básico y kilometraje ilimitado."},
+      "5":{"title":"Limpieza Garantizada","desc":"Todos nuestros vehículos pasan por un riguroso proceso de limpieza y desinfección."}
+    }
+  },
+  "fleet":{
+    "title":"Nuestra Flota",
+    "lead":"Explora nuestra amplia selección de vehículos y encuentra el que mejor se adapte a tus necesidades.",
+    "categories":{"all":"Todos","economic":"Económicos","suv":"SUVs","luxury":"Lujo","vans":"Vans"}
+  },
+  "how":{
+    "title":"¿Cómo funciona?",
+    "lead":"Alquilar con Rent2Go es rápido y sencillo. Sigue estos simples pasos.",
+    "steps":{
+      "1":{"title":"Elige tu vehículo","desc":"Explora nuestra flota y selecciona el vehículo que mejor se adapte a ti."},
+      "2":{"title":"Reserva en línea","desc":"Completa el formulario y recibe confirmación."},
+      "3":{"title":"Prepara los documentos","desc":"Licencia, ID y tarjeta de crédito."},
+      "4":{"title":"Recoge el vehículo","desc":"Inspección y firma del contrato."},
+      "5":{"title":"Disfruta tu viaje","desc":"Soporte 24/7 disponible."},
+      "6":{"title":"Devuelve el vehículo","desc":"Entrega según lo acordado."}
+    }
+  },
+  "requirements":{
+    "title":"Requisitos y Seguridad",
+    "lead":"En Rent2Go priorizamos la seguridad de nuestros clientes y vehículos.",
+    "driver":{"title":"Requisitos para conductores","items":["Edad mínima de 23 años","Licencia con 2 años de antigüedad","DNI o pasaporte"]},
+    "financial":{"title":"Requisitos financieros","items":["Tarjeta de crédito a nombre del conductor","Depósito de seguridad","Pago anticipado"]},
+    "documents":{"title":"Documentos adicionales","items":["Comprobante de hospedaje","Contacto de emergencia","Itinerario de viaje"]},
+    "security":{
+      "1":{"title":"Verificación de identidad","desc":"Validamos minuciosamente todos los documentos."},
+      "2":{"title":"Seguimiento GPS","desc":"Nuestros vehículos cuentan con sistemas de seguimiento GPS."},
+      "3":{"title":"Seguros completos","desc":"Ofrecemos diferentes opciones de cobertura."},
+      "4":{"title":"Inspección detallada","desc":"Inspección antes y después de cada alquiler."}
+    }
+  },
+  "testimonials":{
+    "title":"Lo que dicen nuestros clientes",
+    "lead":"Estas son algunas experiencias de nuestros clientes.",
+    "items":{
+      "1":{"name":"Carlos Mendoza","location":"Lima","text":"Excelente servicio."},
+      "2":{"name":"María Fernández","location":"Arequipa","text":"La atención fue impecable."},
+      "3":{"name":"Juan García","location":"Cusco","text":"Muy buena experiencia."},
+      "4":{"name":"Ana López","location":"Trujillo","text":"Increíble servicio al cliente."}
+    }
+  },
+  "videos":{
+    "title":"Conoce Rent2Go en video",
+    "lead":"Mira dos videos breves para entender mejor la experiencia y el flujo de reserva.",
+    "items":{
+      "1":{"title":"Resumen del servicio","desc":"Una vista rápida de cómo funciona Rent2Go."},
+      "2":{"title":"Guía de reserva","desc":"Paso a paso para reservar desde la web o la app."}
+    }
+  },
+  "faq":{
+    "title":"Preguntas Frecuentes",
+    "lead":"Encuentra respuestas a las preguntas más comunes sobre nuestro servicio de alquiler.",
+    "items":{
+      "1":{"q":"¿Cuál es la edad mínima para alquilar un vehículo?","a":"La edad mínima para alquilar un vehículo estándar es de 23 años. Para vehículos de lujo y SUVs se requiere 25 años."},
+      "2":{"q":"¿Qué documentos necesito?","a":"Licencia válida, DNI o pasaporte y tarjeta de crédito a nombre del conductor."},
+      "3":{"q":"Políticas de combustible?","a":"Entregamos con tanque lleno. Si se devuelve sin combustible se aplicará cargo."},
+      "4":{"q":"¿Qué incluye el precio?","a":"Incluye alquiler, seguro básico y kilometraje ilimitado. No incluye combustible ni multas."}
+    }
+  },
+  "contact":{
+    "title":"¿Listo para explorar Perú con estilo?",
+    "lead":"Reserva tu vehículo ahora y disfruta de una experiencia de alquiler sin complicaciones con Rent2Go.",
+    "location":{
+      "title":"Ubicación",
+      "value":"Av. La Marina 3245, San Miguel — Lima, Perú"
+    },
+    "contact":{
+      "title":"Contáctanos",
+      "value":"+51 1 234 5678\ninfo@rent2go.pe"
+    },
+    "hours":{
+      "title":"Horario",
+      "value":"Lun-Vie 8:00-20:00\nSáb-Dom 9:00-18:00"
+    },
+    "form":{
+      "title":"Reserva tu vehículo",
+      "fullname":"Nombre completo",
+      "email":"Correo electrónico",
+      "phone":"Teléfono",
+      "select":"Selecciona un tipo de vehículo",
+      "startdate":"Fecha de inicio",
+      "enddate":"Fecha de fin",
+      "message":"Mensaje (opcional)",
+      "submit":"Solicitar reserva"
+    },
+    "success":"¡Tu solicitud fue enviada con éxito!"
+  },
+  "footer":{
+    "description":"Brindando experiencias de alquiler de vehículos excepcionales en Perú.",
+    "company":"Empresa",
+    "services":"Servicios",
+    "info":"Información",
+    "links":{
+      "about":"Acerca de nosotros",
+      "rental":"Alquiler de vehículos",
+      "driver":"Alquiler con conductor",
+      "faq":"Preguntas frecuentes",
+      "contact":"Contacto",
+      "copyright":"© 2026 Rent2Go. Todos los derechos reservados."
+    }
+  }
+}
