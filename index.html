@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Rent2Go – Alquila y monetiza vehículos</title>
+    <meta name="description" content="Rent2Go — Alquila y monetiza vehículos fácilmente" />
+    <script>
+      (function () {
+        try {
+          const storedTheme = localStorage.getItem('r2g_theme');
+          const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const theme = storedTheme || (prefersDark ? 'dark' : 'light');
+          if (theme === 'dark') document.documentElement.classList.add('dark');
+          document.documentElement.style.colorScheme = theme;
+        } catch (error) {}
+      })();
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="site-header" role="banner">
+      <div class="container header-inner">
+        <a class="brand" href="#hero" data-i18n="brand">Rent2Go</a>
+
+        <nav class="nav-desktop" id="nav-desktop" role="navigation" aria-label="Main navigation">
+          <a href="#hero" data-i18n="nav.home">Inicio</a>
+          <a href="#fleet" data-i18n="nav.fleet">Vehículos</a>
+          <a href="#how-it-works" data-i18n="nav.how">¿Cómo funciona?</a>
+          <a href="#requirements" data-i18n="nav.requirements">Requisitos</a>
+          <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+          <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        </nav>
+
+        <div class="actions">
+          <div class="header-tools">
+            <button id="lang-toggle" class="lang-toggle" type="button" aria-label="Switch language to Spanish" aria-pressed="false">EN</button>
+            <button id="theme-toggle" class="btn-icon" aria-label="Toggle theme" aria-pressed="false">🌓</button>
+          </div>
+
+          <div class="header-cta">
+            <a class="btn-outline" href="#contact" data-i18n="auth.login">Iniciar sesión</a>
+            <a class="btn-primary" href="#contact" data-i18n="cta.reserve">Reservar ahora</a>
+          </div>
+
+          <button id="menu-toggle" class="btn-icon mobile-only" aria-label="Abrir menú" aria-expanded="false">☰</button>
+        </div>
+      </div>
+
+      <nav id="mobile-nav" class="mobile-nav" aria-hidden="true">
+        <a href="#hero" data-i18n="nav.home">Inicio</a>
+        <a href="#fleet" data-i18n="nav.fleet">Vehículos</a>
+        <a href="#how-it-works" data-i18n="nav.how">¿Cómo funciona?</a>
+        <a href="#requirements" data-i18n="nav.requirements">Requisitos</a>
+        <a href="#faq" data-i18n="nav.faq">Preguntas</a>
+        <a href="#contact" data-i18n="nav.contact">Contacto</a>
+        <a class="btn-primary block" href="#contact" data-i18n="cta.reserve">Reservar ahora</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero" role="region" aria-label="Hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <h1 data-i18n="hero.title">Explora Perú con libertad y estilo</h1>
+          <p data-i18n="hero.subtitle">Rent2Go te ofrece la mejor flota de vehículos en Perú. Vehículos modernos, limpios y seguros para tu viaje.</p>
+          <div class="hero-ctas">
+            <a class="btn-primary" href="#fleet" data-i18n="hero.cta1">Explorar vehículos</a>
+            <a class="btn-outline" href="#how-it-works" data-i18n="hero.cta2">¿Cómo funciona?</a>
+          </div>
+
+          <div class="hero-stats" aria-hidden="false">
+            <div><strong>100+</strong><span data-i18n="hero.stat1">Vehículos</span></div>
+            <div><strong>5000+</strong><span data-i18n="hero.stat2">Clientes</span></div>
+            <div><strong>12</strong><span data-i18n="hero.stat3">Ciudades</span></div>
+            <div><strong>24/7</strong><span data-i18n="hero.stat4">Soporte</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="section" role="region" aria-label="Features">
+        <div class="container">
+          <h2 data-i18n="features.title">¿Por qué elegir Rent2Go?</h2>
+          <p class="lead" data-i18n="features.lead">Brindamos experiencias de alquiler de alta calidad con atención personalizada.</p>
+          <div class="grid features" id="features-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="fleet" class="section" role="region" aria-label="Fleet">
+        <div class="container">
+          <h2 data-i18n="fleet.title">Nuestra Flota</h2>
+          <p class="lead" data-i18n="fleet.lead">Explora nuestra amplia selección de vehículos y encuentra el que mejor se adapte a tus necesidades.</p>
+          <div class="categories" id="fleet-categories" role="tablist" aria-label="Fleet categories"></div>
+          <div class="grid fleet-grid" id="fleet-grid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section alt" role="region" aria-label="How it works">
+        <div class="container">
+          <h2 data-i18n="how.title">¿Cómo funciona?</h2>
+          <p class="lead" data-i18n="how.lead">Alquilar con Rent2Go es rápido y sencillo. Sigue estos simples pasos.</p>
+          <div class="grid steps" id="how-steps" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="requirements" class="section alt" role="region" aria-label="Requisitos">
+        <div class="container">
+          <h2 data-i18n="requirements.title">Requisitos y seguridad</h2>
+          <p class="lead" data-i18n="requirements.lead">En Rent2Go priorizamos la seguridad de nuestros clientes y vehículos.</p>
+          <div class="grid requirements-grid" id="requirements-list" aria-live="polite"></div>
+          <div id="security-measures"></div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="section alt" role="region" aria-label="Testimonials">
+        <div class="container">
+          <h2 data-i18n="testimonials.title">Lo que dicen nuestros clientes</h2>
+          <p class="lead" data-i18n="testimonials.lead">Estas son algunas experiencias de nuestros clientes.</p>
+          <div class="grid testimonials" id="testimonials-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="videos" class="section" role="region" aria-label="Videos">
+        <div class="container">
+          <h2 data-i18n="videos.title">Conoce Rent2Go en video</h2>
+          <p class="lead" data-i18n="videos.lead">Mira dos videos breves para entender mejor la experiencia y el flujo de reserva.</p>
+          <div class="grid video-grid">
+            <article class="video-card">
+              <a class="video-thumb" href="https://www.youtube.com/watch?v=M7lc1UVf-VE" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/M7lc1UVf-VE/hqdefault.jpg" alt="Rent2Go overview video" loading="lazy" />
+                <span class="video-play" aria-hidden="true">▶</span>
+              </a>
+              <div class="video-meta">
+                <h3 data-i18n="videos.items.1.title">Resumen del servicio</h3>
+                <p data-i18n="videos.items.1.desc">Una vista rápida de cómo funciona Rent2Go.</p>
+                <a class="video-link" href="https://www.youtube.com/watch?v=M7lc1UVf-VE" target="_blank" rel="noopener noreferrer">Ver en YouTube</a>
+              </div>
+            </article>
+            <article class="video-card">
+              <a class="video-thumb" href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" rel="noopener noreferrer">
+                <img src="https://img.youtube.com/vi/jNQXAC9IVRw/hqdefault.jpg" alt="How to reserve a vehicle on Rent2Go" loading="lazy" />
+                <span class="video-play" aria-hidden="true">▶</span>
+              </a>
+              <div class="video-meta">
+                <h3 data-i18n="videos.items.2.title">Guía de reserva</h3>
+                <p data-i18n="videos.items.2.desc">Paso a paso para reservar desde la web o la app.</p>
+                <a class="video-link" href="https://www.youtube.com/watch?v=jNQXAC9IVRw" target="_blank" rel="noopener noreferrer">Ver en YouTube</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="section" role="region" aria-label="FAQ">
+        <div class="container">
+          <h2 data-i18n="faq.title">Preguntas frecuentes</h2>
+          <p class="lead" data-i18n="faq.lead">Encuentra respuestas a las preguntas más comunes sobre nuestro servicio de alquiler de vehículos.</p>
+          <div id="faq-list" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section id="contact" class="section cta-section" role="region" aria-label="Contacto">
+        <div class="cta-bg" aria-hidden="true"></div>
+        <div class="container">
+          <div class="cta-grid">
+            <div class="cta-info">
+              <h2 data-i18n="contact.title">¿Listo para explorar Perú con estilo?</h2>
+              <p data-i18n="contact.lead">Reserva tu vehículo ahora y disfruta de una experiencia de alquiler sin complicaciones con Rent2Go.</p>
+              <div class="contact-info">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div>
+                    <h3 data-i18n="contact.location.title">Ubicación</h3>
+                    <p data-i18n="contact.location.value">Av. La Marina 3245, San Miguel — Lima, Perú</p>
+                  </div>
+                </div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                  <div>
+                    <h3 data-i18n="contact.contact.title">Contáctanos</h3>
+                    <p data-i18n="contact.contact.value">+51 1 234 5678<br/>info@rent2go.pe</p>
+                  </div>
+                </div>
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                  <div>
+                    <h3 data-i18n="contact.hours.title">Horario</h3>
+                    <p data-i18n="contact.hours.value">Lun-Vie 8:00-20:00<br/>Sáb-Dom 9:00-18:00</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-card">
+              <h3 data-i18n="contact.form.title">Reserva tu vehículo</h3>
+              <div id="form-success" class="form-success" style="display:none" role="status" aria-live="polite">¡Solicitud enviada con éxito!</div>
+              <form id="contact-form">
+                <div class="form-group">
+                  <label for="contact-name" data-i18n="contact.form.fullname">Nombre completo</label>
+                  <input id="contact-name" type="text" name="name" placeholder="John Doe" required aria-label="Nombre completo" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-email" data-i18n="contact.form.email">Correo electrónico</label>
+                  <input id="contact-email" type="email" name="email" placeholder="john@example.com" required aria-label="Correo electrónico" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-phone" data-i18n="contact.form.phone">Teléfono</label>
+                  <input id="contact-phone" type="tel" name="phone" placeholder="+51 1 234 5678" required aria-label="Teléfono" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-vehicle" data-i18n="contact.form.select">Tipo de vehículo</label>
+                  <select id="contact-vehicle" name="carType" required aria-label="Tipo de vehículo">
+                    <option value="">Selecciona un vehículo</option>
+                    <option value="economic">Económico</option>
+                    <option value="suv">SUV</option>
+                    <option value="luxury">Lujo</option>
+                    <option value="van">Van</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="contact-start" data-i18n="contact.form.startdate">Fecha de recogida</label>
+                  <input id="contact-start" type="date" name="pickupDate" required aria-label="Fecha de recogida" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-end" data-i18n="contact.form.enddate">Fecha de devolución</label>
+                  <input id="contact-end" type="date" name="returnDate" required aria-label="Fecha de devolución" />
+                </div>
+                <div class="form-group">
+                  <label for="contact-message" data-i18n="contact.form.message">Mensaje (opcional)</label>
+                  <textarea id="contact-message" name="message" placeholder="Cuéntanos más..." aria-label="Mensaje"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" data-i18n="contact.form.submit">Solicitar reserva</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4 data-i18n="brand">Rent2Go</h4>
+            <p class="footer-description" data-i18n="footer.description">Brindando experiencias de alquiler de vehículos excepcionales en Perú.</p>
+            <div class="footer-socials">
+              <a href="#" title="Facebook" aria-label="Facebook">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5c-.563-.074-2.326-.274-4.059-.274-4.814 0-7.941 2.941-7.941 8.333v2.941z"/></svg>
+              </a>
+              <a href="#" title="Twitter" aria-label="Twitter">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-9-5.5z"/></svg>
+              </a>
+              <a href="#" title="Instagram" aria-label="Instagram">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h4 data-i18n="footer.company">Empresa</h4>
+            <ul>
+              <li><a href="#" data-i18n="footer.links.about">Acerca de nosotros</a></li>
+              <li><a href="#fleet" data-i18n="footer.links.rental">Alquiler de vehículos</a></li>
+              <li><a href="#" data-i18n="footer.links.driver">Alquiler con conductor</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 data-i18n="footer.services">Servicios</h4>
+            <ul>
+              <li><a href="#videos" data-i18n="videos.title">Videos</a></li>
+              <li><a href="#faq" data-i18n="footer.links.faq">Preguntas frecuentes</a></li>
+              <li><a href="#contact" data-i18n="footer.links.contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4 data-i18n="footer.info">Información</h4>
+            <ul>
+              <li><a href="#faq" data-i18n="footer.links.faq">Preguntas frecuentes</a></li>
+              <li><a href="#contact" data-i18n="footer.links.contact">Contacto</a></li>
+              <li><a href="#hero" data-i18n="nav.home">Inicio</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-divider" data-i18n="footer.links.copyright">© 2026 Rent2Go. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
