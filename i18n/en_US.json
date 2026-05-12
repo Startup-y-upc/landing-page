@@ -1,0 +1,140 @@
+{
+  "brand":"Rent2Go",
+  "language":"English",
+  "nav":{
+    "home":"Home",
+    "fleet":"Fleet",
+    "how":"How it works",
+    "requirements":"Requirements",
+    "faq":"FAQ",
+    "contact":"Contact"
+  },
+  "auth":{
+    "login":"Sign in"
+  },
+  "cta":{
+    "reserve":"Reserve now"
+  },
+  "hero":{
+    "title":"Explore Peru with freedom and style",
+    "subtitle":"Rent2Go offers the best vehicle fleet in Peru. Modern, clean and secure cars for your trip.",
+    "cta1":"Explore vehicles",
+    "cta2":"How it works",
+    "stat1":"Vehicles",
+    "stat2":"Happy customers",
+    "stat3":"Cities",
+    "stat4":"Support"
+  },
+  "features":{
+    "title":"Why choose Rent2Go?",
+    "lead":"We provide high quality rental experiences with personalized service.",
+    "items":{
+      "0":{"title":"Premium Fleet","desc":"Modern and well-maintained vehicles to ensure your safety and comfort."},
+      "1":{"title":"Flexible Reservations","desc":"Modify or cancel your reservation without complications up to 48 hours before."},
+      "2":{"title":"Simple Process","desc":"Book online or by phone and pick up your vehicle in minutes."},
+      "3":{"title":"24/7 Service","desc":"Road assistance and customer support available 24 hours a day."},
+      "4":{"title":"Transparent Rates","desc":"No hidden charges. Our prices include basic insurance and unlimited mileage."},
+      "5":{"title":"Guaranteed Cleanliness","desc":"All our vehicles undergo a rigorous cleaning and disinfection process."}
+    }
+  },
+  "fleet":{
+    "title":"Our Fleet",
+    "lead":"Browse our selection of vehicles and find the right one for you.",
+    "categories":{"all":"All","economic":"Economy","suv":"SUVs","luxury":"Luxury","vans":"Vans"}
+  },
+  "how":{
+    "title":"How it works",
+    "lead":"Renting with Rent2Go is fast and easy. Follow these simple steps.",
+    "steps":{
+      "1":{"title":"Choose your vehicle","desc":"Explore our fleet and select the vehicle that best suits you."},
+      "2":{"title":"Book online","desc":"Complete the form and receive confirmation."},
+      "3":{"title":"Prepare documents","desc":"License, ID and credit card."},
+      "4":{"title":"Pick up vehicle","desc":"Inspection and contract signature."},
+      "5":{"title":"Enjoy your trip","desc":"24/7 support available."},
+      "6":{"title":"Return vehicle","desc":"Return according to the agreed terms."}
+    }
+  },
+  "requirements":{
+    "title":"Requirements & Safety",
+    "lead":"We prioritize the safety of our customers and vehicles.",
+    "driver":{"title":"Driver Requirements","items":["Minimum age of 23 years","License valid for 2+ years","ID or passport"]},
+    "financial":{"title":"Financial Requirements","items":["Credit card in driver's name","Security deposit","Advance payment"]},
+    "documents":{"title":"Additional Documents","items":["Accommodation proof","Emergency contact","Travel itinerary"]},
+    "security":{
+      "1":{"title":"Identity Verification","desc":"We carefully validate all documents."},
+      "2":{"title":"GPS Tracking","desc":"Our vehicles are equipped with GPS tracking systems."},
+      "3":{"title":"Complete Insurance","desc":"We offer different coverage options."},
+      "4":{"title":"Detailed Inspection","desc":"Inspection before and after each rental."}
+    }
+  },
+  "testimonials":{
+    "title":"What our customers say",
+    "lead":"These are some of the experiences from our customers.",
+    "items":{
+      "1":{"name":"Carlos Mendoza","location":"Lima","text":"Excellent service."},
+      "2":{"name":"María Fernández","location":"Arequipa","text":"The attention was impeccable."},
+      "3":{"name":"Juan García","location":"Cusco","text":"Very good experience."},
+      "4":{"name":"Ana López","location":"Trujillo","text":"Incredible customer service."}
+    }
+  },
+  "videos":{
+    "title":"Get to know Rent2Go in video",
+    "lead":"Watch two short videos to better understand the experience and booking flow.",
+    "items":{
+      "1":{"title":"Service overview","desc":"A quick look at how Rent2Go works."},
+      "2":{"title":"Booking guide","desc":"Step-by-step reservation flow from the web or app."}
+    }
+  },
+  "faq":{
+    "title":"Frequently Asked Questions",
+    "lead":"Find answers to common questions about our rental service.",
+    "items":{
+      "1":{"q":"What is the minimum age to rent a vehicle?","a":"The minimum age to rent a standard vehicle is 23 years. For luxury vehicles and SUVs, 25 years is required."},
+      "2":{"q":"What documents do I need?","a":"Valid license, ID or passport, and credit card in the driver's name."},
+      "3":{"q":"Fuel policies?","a":"We deliver with a full tank. If returned empty, a charge will apply."},
+      "4":{"q":"What does the price include?","a":"Includes rental, basic insurance and unlimited mileage. Does not include fuel or fines."}
+    }
+  },
+  "contact":{
+    "title":"Ready to explore Peru in style?",
+    "lead":"Book your vehicle now and enjoy a hassle-free rental experience.",
+    "location":{
+      "title":"Location",
+      "value":"Av. La Marina 3245, San Miguel — Lima, Peru"
+    },
+    "contact":{
+      "title":"Contact us",
+      "value":"+51 1 234 5678\ninfo@rent2go.pe"
+    },
+    "hours":{
+      "title":"Opening hours",
+      "value":"Mon-Fri 8:00-20:00\nSat-Sun 9:00-18:00"
+    },
+    "form":{
+      "title":"Reserve your vehicle",
+      "fullname":"Full name",
+      "email":"Email",
+      "phone":"Phone",
+      "select":"Select a vehicle type",
+      "startdate":"Start date",
+      "enddate":"End date",
+      "message":"Message (optional)",
+      "submit":"Request reservation"
+    },
+    "success":"Your request was sent successfully!"
+  },
+  "footer":{
+    "description":"Providing exceptional vehicle rental experiences across Peru.",
+    "company":"Company",
+    "services":"Services",
+    "info":"Information",
+    "links":{
+      "about":"About us",
+      "rental":"Vehicle rental",
+      "driver":"Rental with driver",
+      "faq":"FAQ",
+      "contact":"Contact",
+      "copyright":"© 2026 Rent2Go. All rights reserved."
+    }
+  }
+}
