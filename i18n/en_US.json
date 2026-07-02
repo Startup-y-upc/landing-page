@@ -134,7 +134,32 @@
       "driver":"Rental with driver",
       "faq":"FAQ",
       "contact":"Contact",
+      "terms":"Terms and Conditions",
       "copyright":"© 2026 Rent2Go. All rights reserved."
+    },
+    "socials":{
+      "facebook":"Facebook",
+      "twitter":"Twitter",
+      "instagram":"Instagram",
+      "whatsapp":"WhatsApp Business"
+    }
+  },
+  "terms":{
+    "title":"Terms and Conditions",
+    "lead":"Last updated: July 2, 2026. This content is for a student project and does not constitute professional legal advice.",
+    "pendingNotice":"Some data in this document (jurisdiction, production domain, social links) are marked PENDING CONFIRMATION and may change before becoming final legal content.",
+    "sections":{
+      "acceptance":{"title":"1. Acceptance of Terms","body":"By accessing or using the Rent2Go platform (website, Flutter app, and Kotlin/Android app), you agree to be bound by these Terms and Conditions. If you disagree, you must not use the Platform."},
+      "jurisdiction":{"title":"2. Jurisdiction and Governing Law","body":"[PENDING CONFIRMATION] These Terms are governed by the laws of the Republic of Peru, used as a working default pending final confirmation by the team (see source document)."},
+      "accounts":{"title":"3. User Accounts","body":"Creating an account is required to access features such as booking or listing vehicles. Users may select an account type (renter, owner, or both), and identity verification (KYC) may be required."},
+      "content":{"title":"4. User-Generated Content","body":"The Platform allows uploading vehicle photos, KYC documents, and profile photos. Users warrant they own the rights to such content."},
+      "payments":{"title":"5. Payments","body":"Payments are one-time charges per rental reservation. Rent2Go does not offer subscription plans or recurring memberships."},
+      "ip":{"title":"6. Intellectual Property","body":"Rent2Go's brand, logo, and visual design are its exclusive property. Unauthorized use is prohibited."},
+      "feedback":{"title":"7. Use of Feedback","body":"Rent2Go may use user feedback without any obligation of compensation."},
+      "promotions":{"title":"8. Promotions and Contests","body":"Rent2Go may offer promotions or contests, each governed by its own specific rules."},
+      "liability":{"title":"9. Limitation of Liability","body":"Rent2Go is not liable for indirect damages arising from use of the Platform, to the maximum extent permitted by law."},
+      "changes":{"title":"10. Changes to Terms","body":"These Terms may be updated periodically; the last-updated date reflects the current version."},
+      "contact":{"title":"11. Contact","body":"Email: info@rent2go.pe. Website: [PENDING CONFIRMATION — TBD production domain]/#contact."}
     }
   }
 }
