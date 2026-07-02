@@ -721,6 +721,9 @@ textarea:focus-visible {
   line-height: 1.7;
   font-size: 0.95rem;
 }
+#faq-list .faq.open .answer {
+  display: block;
+}
 
 /* Requirements */
 .requirements-grid {

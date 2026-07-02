@@ -161,51 +161,6 @@
         </div>
       </section>
 
-      <section id="terms" class="section alt" role="region" aria-label="Términos y Condiciones">
-        <div class="container">
-          <h2 data-i18n="terms.title">Términos y Condiciones</h2>
-          <p class="lead" data-i18n="terms.lead">Última actualización: 2 de julio de 2026. Este contenido corresponde a un proyecto estudiantil y no constituye asesoría legal profesional.</p>
-          <p class="terms-pending-notice" role="note" data-i18n="terms.pendingNotice">Algunos datos de este documento (jurisdicción, dominio de producción, enlaces sociales) están marcados como PENDING CONFIRMATION y pueden cambiar antes de convertirse en contenido legal definitivo.</p>
-
-          <div class="terms-content">
-            <h3 data-i18n="terms.sections.acceptance.title">1. Aceptación de los Términos</h3>
-            <p data-i18n="terms.sections.acceptance.body">Al acceder o utilizar la plataforma Rent2Go (sitio web, aplicación Flutter y aplicación Kotlin/Android), usted acepta quedar vinculado por estos Términos y Condiciones. Si no está de acuerdo, no debe utilizar la Plataforma.</p>
-
-            <h3 data-i18n="terms.sections.jurisdiction.title">2. Jurisdicción y Ley Aplicable</h3>
-            <p data-i18n="terms.sections.jurisdiction.body">[PENDING CONFIRMATION] Estos Términos se rigen por las leyes de la República del Perú, jurisdicción usada como valor de trabajo pendiente de confirmación final por el equipo (ver documento fuente).</p>
-
-            <h3 data-i18n="terms.sections.accounts.title">3. Cuentas de Usuario</h3>
-            <p data-i18n="terms.sections.accounts.body">Es necesario crear una cuenta para acceder a funciones como reservar o publicar vehículos. El usuario puede seleccionar tipo de cuenta (arrendatario, propietario o ambos) y puede requerirse verificación de identidad (KYC).</p>
-
-            <h3 data-i18n="terms.sections.content.title">4. Contenido Generado por el Usuario</h3>
-            <p data-i18n="terms.sections.content.body">La Plataforma permite cargar fotografías de vehículos, documentos KYC y fotos de perfil. El usuario garantiza poseer los derechos sobre dicho contenido.</p>
-
-            <h3 data-i18n="terms.sections.payments.title">5. Pagos</h3>
-            <p data-i18n="terms.sections.payments.body">Los pagos son únicos por reserva de alquiler. Rent2Go no ofrece planes de suscripción ni membresías recurrentes.</p>
-
-            <h3 data-i18n="terms.sections.ip.title">6. Propiedad Intelectual</h3>
-            <p data-i18n="terms.sections.ip.body">La marca, logotipo y diseño visual de Rent2Go son de su propiedad exclusiva. Se prohíbe su uso no autorizado.</p>
-
-            <h3 data-i18n="terms.sections.feedback.title">7. Uso de Comentarios y Sugerencias</h3>
-            <p data-i18n="terms.sections.feedback.body">Rent2Go podrá usar el feedback de los usuarios sin obligación de compensación.</p>
-
-            <h3 data-i18n="terms.sections.promotions.title">8. Promociones y Concursos</h3>
-            <p data-i18n="terms.sections.promotions.body">Rent2Go podrá ofrecer promociones o concursos, cada uno regido por sus propias reglas específicas.</p>
-
-            <h3 data-i18n="terms.sections.liability.title">9. Limitación de Responsabilidad</h3>
-            <p data-i18n="terms.sections.liability.body">Rent2Go no será responsable por daños indirectos derivados del uso de la Plataforma, en la máxima medida permitida por la ley.</p>
-
-            <h3 data-i18n="terms.sections.changes.title">10. Modificaciones a los Términos</h3>
-            <p data-i18n="terms.sections.changes.body">Estos Términos pueden actualizarse periódicamente; la fecha de última actualización refleja la versión vigente.</p>
-
-            <h3 data-i18n="terms.sections.contact.title">11. Contacto</h3>
-            <p data-i18n="terms.sections.contact.body">Correo: info@rent2go.pe. Página web: [PENDING CONFIRMATION — TBD production domain]/#contact.</p>
-          </div>
-
-          <p class="terms-source-note">Fuente canónica: <code>docs/legal/terms-and-conditions.md</code> (ver <code>docs/legal/check-parity.md</code> antes de editar).</p>
-        </div>
-      </section>
-
       <section id="contact" class="section cta-section" role="region" aria-label="Contacto">
         <div class="cta-bg" aria-hidden="true"></div>
         <div class="container">
@@ -314,7 +269,16 @@
             <ul>
               <li><a href="#faq" data-i18n="footer.links.faq">Preguntas frecuentes</a></li>
               <li><a href="#contact" data-i18n="footer.links.contact">Contacto</a></li>
-              <li><a href="#terms" data-i18n="footer.links.terms">Términos y Condiciones</a></li>
+              <li>
+                <a
+                  id="footer-terms-link"
+                  data-testid="footer-terms-link"
+                  href="assets/legal/terms-and-conditions.pdf"
+                  target="_blank"
+                  rel="noopener"
+                  data-i18n="footer.links.terms"
+                >Términos y Condiciones</a>
+              </li>
             </ul>
           </div>
         </div>
