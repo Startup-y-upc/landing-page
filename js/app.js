@@ -127,6 +127,7 @@
     if(yearEl) yearEl.textContent = new Date().getFullYear()
 
     // Render dynamic content (features, fleet, steps, requirements, testimonials, faq)
+    renderFooterSocials()
     renderFeatures()
     renderFleet()
     renderSteps()
@@ -145,6 +146,60 @@
     { titleKey: 'features.items.4.title', descKey: 'features.items.4.desc' },
     { titleKey: 'features.items.5.title', descKey: 'features.items.5.desc' },
   ]
+
+  // Data-driven footer social icon list. TODO(PENDING CONFIRMATION): replace
+  // `href: '#'` placeholders with real URLs once the team supplies them —
+  // swapping a URL or adding/removing an icon here is a 1-entry change,
+  // it does not require touching markup in index.html or sections/footer.html.
+  const footerSocials = [
+    {
+      key: 'facebook',
+      nameKey: 'footer.socials.facebook',
+      href: '#', // [TBD — social URL]
+      pending: true,
+      svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5c-.563-.074-2.326-.274-4.059-.274-4.814 0-7.941 2.941-7.941 8.333v2.941z"/></svg>'
+    },
+    {
+      key: 'twitter',
+      nameKey: 'footer.socials.twitter',
+      href: '#', // [TBD — social URL]
+      pending: true,
+      svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2s9 5 20 5a9.5 9.5 0 00-9-5.5c4.75 2.25 7-7 7-7a10.6 10.6 0 01-9-5.5z"/></svg>'
+    },
+    {
+      key: 'instagram',
+      nameKey: 'footer.socials.instagram',
+      href: '#', // [TBD — social URL]
+      pending: true,
+      svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><circle cx="17.5" cy="6.5" r="1.5"/></svg>'
+    },
+    {
+      // 4th footer icon — WhatsApp Business (PENDING CONFIRMATION per implementation plan §10 Risks).
+      key: 'whatsapp',
+      nameKey: 'footer.socials.whatsapp',
+      href: '#', // [TBD — social URL]
+      pending: true,
+      svg: '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38a9.9 9.9 0 004.74 1.21h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.87 9.87 0 0012.04 2zm5.79 14.13c-.24.68-1.4 1.3-1.93 1.38-.5.08-1.12.11-1.81-.11-.42-.13-.95-.31-1.64-.6-2.88-1.24-4.76-4.14-4.9-4.33-.14-.19-1.17-1.56-1.17-2.98 0-1.42.74-2.11 1-2.4.26-.29.57-.36.76-.36.19 0 .38 0 .55.01.18.01.41-.07.64.49.24.58.81 2 .88 2.14.07.14.12.31.02.5-.1.19-.15.31-.29.48-.14.17-.3.37-.43.5-.14.14-.29.29-.12.57.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.3 2.33 1.44.29.14.46.12.63-.07.17-.19.71-.83.9-1.11.19-.29.38-.24.63-.14.26.1 1.65.78 1.93.92.29.14.48.21.55.33.07.12.07.68-.17 1.36z"/></svg>'
+    }
+  ]
+
+  function renderFooterSocials(){
+    const list = document.getElementById('footer-socials-list')
+    if(!list) return
+    list.innerHTML = ''
+    footerSocials.forEach(social=>{
+      const li = document.createElement('li')
+      const name = t(social.nameKey)
+      const a = document.createElement('a')
+      a.href = social.href
+      a.setAttribute('aria-label', name)
+      a.setAttribute('title', name)
+      if(social.pending) a.setAttribute('data-pending', 'true')
+      a.innerHTML = social.svg
+      li.appendChild(a)
+      list.appendChild(li)
+    })
+  }
 
   function renderFeatures(){
     const container = document.getElementById('features-list')
