@@ -81,8 +81,8 @@
     "title":"Conoce Rent2Go en video",
     "lead":"Mira dos videos breves para entender mejor la experiencia y el flujo de reserva.",
     "items":{
-      "1":{"title":"Resumen del servicio","desc":"Una vista rápida de cómo funciona Rent2Go."},
-      "2":{"title":"Guía de reserva","desc":"Paso a paso para reservar desde la web o la app."}
+      "1":{"title":"About the team","desc":"Equipo Rent2Go."},
+      "2":{"title":"About the product","desc":"Conoce Rent2Go."}
     }
   },
   "faq":{
